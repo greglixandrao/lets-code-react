@@ -5,7 +5,7 @@ import ReactDOM from "react-dom";
 // import App3 from "./components/App3";
 // import App4 from "./components/App4";
 // import Lista from "./components/Lista";
-import Lista2 from "./components/Lista";
+import Lista2 from "./components/Lista2";
 
 ReactDOM.render(
   <React.StrictMode>
