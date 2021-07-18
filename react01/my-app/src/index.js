@@ -6,7 +6,8 @@ import ReactDOM from "react-dom";
 // import App4 from "./components/App4";
 // import Lista from "./components/Lista";
 // import { Lista2, Item } from "./components/Lista2";
-import Formulario from "./components/Formulario";
+// import Formulario from "./components/Formulario";
+import Hello from "./components/Hello";
 
 ReactDOM.render(
   <React.StrictMode>
@@ -17,11 +18,14 @@ ReactDOM.render(
       <Item key={10} id={10} completo={false}>
         Teste1
       </Item>
+      Teste2
       <Item key={10} id={10} completo={true}>
-        Teste2
       </Item>
     </Lista2> */}
-    <Formulario />
+    {/* <Formulario /> */}
+    <Hello>
+      <h1>Hello World!</h1>
+    </Hello>
   </React.StrictMode>,
   document.getElementById("root")
 );
