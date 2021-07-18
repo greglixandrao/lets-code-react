@@ -17,6 +17,10 @@ class Lista2 extends React.Component {
     return (
       <>
         <ul>
+          {React.Children.map(this.props.children, (child) =>
+            child.type === Item ? child : null
+          )}
+          {/* {this.props.children} */}
           {this.state.items.map((item) => (
             <Item key={item.id} completo={item.completo}>
               {item.nome}
@@ -29,6 +33,7 @@ class Lista2 extends React.Component {
 }
 
 class Item extends React.Component {
+  // eslint-disable-next-line no-useless-constructor
   constructor(props) {
     super(props);
   }
@@ -44,4 +49,4 @@ class Item extends React.Component {
   }
 }
 
-export default Lista2;
+export { Lista2, Item };
