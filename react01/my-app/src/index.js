@@ -8,7 +8,8 @@ import ReactDOM from "react-dom";
 // import { Lista2, Item } from "./components/Lista2";
 // import Formulario from "./components/Formulario";
 // import Hello from "./components/Hello";
-import HookState from "./components/HookState";
+// import HookState from "./components/HookState";
+import HookEfeito from "./components/HookEfeito";
 
 ReactDOM.render(
   <React.StrictMode>
@@ -27,7 +28,8 @@ ReactDOM.render(
     {/* <Hello>
       <h1>Hello World!</h1>
     </Hello> */}
-    <HookState />
+    {/* <HookState /> */}
+    <HookEfeito />
   </React.StrictMode>,
   document.getElementById("root")
 );
